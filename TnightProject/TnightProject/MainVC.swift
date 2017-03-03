@@ -11,23 +11,16 @@ import UIKit
 class MainVC: UIViewController {
 
     
-    
+//MARK: IBOutlets
     
     @IBOutlet weak var scrollBottomConstraint: NSLayoutConstraint!
-    
-    
     @IBOutlet weak var screenScrollView: UIScrollView!
     @IBOutlet weak var mainImageView: UIImageView!
-    
-    
-    
     @IBOutlet weak var scrollLineView: UIView!
-    
     @IBOutlet weak var signInButton: UIButton!
-    
-    
     @IBOutlet weak var signUpButton: UIButton!
     
+//MARK: App Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +31,7 @@ class MainVC: UIViewController {
         self.setupSubviews()
     }
     
-   
+//MARK: Setup Subview
     
     private func setupSubviews() {
     
@@ -65,6 +58,7 @@ class MainVC: UIViewController {
         
         self.screenScrollView.contentSize = CGSize(width: (self.screenScrollView.frame.width) * 2, height: self.screenScrollView.frame.height)
     
+//.....................changing height during keyboard view...............
         
         NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (Notification) in
             
@@ -114,7 +108,7 @@ class MainVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+//MARK: SignIn Button Tapped
     
     @IBAction func signInButtonTapped(_ sender: Any) {
     
@@ -122,7 +116,7 @@ class MainVC: UIViewController {
     
     }
     
-    
+//MARK: SignUp Button Tapped
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
    
@@ -130,6 +124,8 @@ class MainVC: UIViewController {
     self.screenScrollView.setContentOffset(CGPoint(x: self.screenScrollView.frame.width, y: 0), animated: true)
     
     }
+    
+//MARk: Target for login Button
     
     func loginButtonTapped(button : UIButton) {
         
@@ -139,6 +135,7 @@ class MainVC: UIViewController {
     }
 }
 
+//MARK: extension MainVC : UIScrollViewDelegate
 
 extension MainVC : UIScrollViewDelegate {
     
