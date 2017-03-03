@@ -10,6 +10,11 @@ import UIKit
 
 class SignUpVC: UIViewController {
 
+    
+    
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

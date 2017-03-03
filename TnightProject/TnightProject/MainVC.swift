@@ -103,6 +103,9 @@ class MainVC: UIViewController {
         }
         
         
+        signUpController.loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        
+        
         
     }
 
@@ -128,7 +131,12 @@ class MainVC: UIViewController {
     
     }
     
+    func loginButtonTapped(button : UIButton) {
+        
+        self.screenScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
 
+        
+    }
 }
 
 

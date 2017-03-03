@@ -263,8 +263,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="324"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="AbU-pN-PfH">
-                                <rect key="frame" x="20" y="40" width="280" height="266.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="AbU-pN-PfH">
+                                <rect key="frame" x="20" y="40" width="280" height="280.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ac7-SR-Myk">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="170"/>
@@ -301,7 +301,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gsC-Tm-TGK">
-                                        <rect key="frame" x="0.0" y="170" width="280" height="74.5"/>
+                                        <rect key="frame" x="0.0" y="177" width="280" height="74.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send me occasional email updates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKe-JD-EID">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="13.5"/>
@@ -321,17 +321,17 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="faa-c2-BwD">
-                                        <rect key="frame" x="0.0" y="244.5" width="280" height="22"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="faa-c2-BwD">
+                                        <rect key="frame" x="0.0" y="258.5" width="280" height="22"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already a member?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwG-bo-T5X">
-                                                <rect key="frame" x="0.0" y="0.0" width="201" height="22"/>
+                                                <rect key="frame" x="0.0" y="6" width="140" height="10"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                                 <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0P-72-2a5">
-                                                <rect key="frame" x="201" y="0.0" width="79" height="22"/>
+                                                <rect key="frame" x="140" y="0.0" width="140" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                                 <state key="normal" title="LogIn">
                                                     <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -354,6 +354,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="324"/>
+                    <connections>
+                        <outlet property="loginButton" destination="x0P-72-2a5" id="IX7-Hh-oDf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SoD-xu-3E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
