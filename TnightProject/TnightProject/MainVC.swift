@@ -99,8 +99,6 @@ class MainVC: UIViewController {
         
         signUpController.loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
